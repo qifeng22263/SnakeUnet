@@ -13,7 +13,7 @@ Current monitoring and early warning systems for surface defects in highway tunn
 **B. Create virtual-env.**
 `conda create -n TDSNet python`
 
-**C. Install pytoch opencv-python numpy torchsummary according to the official documentation.**
+**C. Install `pytoch opencv-python numpy torchsummary` according to the official documentation.**
 
 # Hyperparameter setting
 `batch-size=3 epochs=150 lr=0.0001 weight-decay=1e-4`
