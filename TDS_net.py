@@ -321,7 +321,7 @@ class DecoderConv(nn.Module):
         return x
 
 
-class SnakeUNet(nn.Module):
+class TDSNet(nn.Module):
     def __init__(
         self,
         n_channels:int=3,
@@ -498,7 +498,7 @@ class SnakeUNet(nn.Module):
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # 初始化模型
-    model = SnakeUNet(
+    model = TDSNet(
         n_channels=3,
         n_classes=1,
         kernel_size=9,
