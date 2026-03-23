@@ -15,5 +15,8 @@ Current monitoring and early warning systems for surface defects in highway tunn
 
 **C. Install pytoch**
 
+# Hyperparameter setting
+`batch-size=3 epochs=150 lr=0.0001 weight-decay=1e-4`
+
 # Download weights
 [百度网盘]()
