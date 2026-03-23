@@ -9,8 +9,11 @@ Current monitoring and early warning systems for surface defects in highway tunn
 # Get Started
 **A. Clone this repository.**
 `git clone https://github.com/qifeng22263/TDSNet.git`
+
 **B. Create virtual-env.**
 `conda create -n TDSNet python`
+
 **C. Install pytoch**
+
 # Download weights
 [百度网盘]()
