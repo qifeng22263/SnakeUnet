@@ -5,10 +5,7 @@ import numpy as np
 import torch
 from PIL import Image
 from torchvision import transforms
-
-
-from snake_streamenhanc import SnakeStream_enhanc
-from snake_unet import SnakeUNet
+from TDS_net import TDSNet
 
 def time_synchronized():
     torch.cuda.synchronize() if torch.cuda.is_available() else None
@@ -30,22 +27,7 @@ def main():
     assert os.path.exists(img_path), f"image file {img_path} dose not exists."
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-    #model = u2net_full(out_ch=classes)
-    # model = UNet(num_classes=classes + 1)
-    #model = UnetPlusPlus(num_classes=classes+1)
-    # model = fcn_resnet50(aux=False, num_classes=num_classes, pretrain_backbone=False)
-
-    # model = deeplabv3_resnet50(aux=False, num_classes=classes+1)
-    # model = SegNet(num_classes=classes+1)
-    #model = AttU_Net(output_ch=classes)
-    # model = NestedUNet(out_ch=num_classes)
-    #model= PSPNet(num_classes=classes+1, pretrained=False)
-    #model=ConvNextmodel(n_classes=classes+1)
-    #model= ConvNextmodel_SE(n_classes=classes+1)
-    #model= UNet_NEW(num_classes=classes+1)
-
-    model = SnakeUNet(n_classes=classes+1)
+    model = TDSNet(n_classes=classes+1)
     # model = RTFormerSlim(num_classes=classes+1)
     # model = SegNeXt_S(num_classes=classes+1)
 
