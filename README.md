@@ -12,5 +12,5 @@ Current monitoring and early warning systems for surface defects in highway tunn
 **B. Create virtual-env.**
 `conda create -n TDSNet python`
 **C. Install pytoch**
-# 权重文件
+# Download weights
 [百度网盘]()
