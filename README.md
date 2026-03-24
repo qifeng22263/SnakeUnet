@@ -13,10 +13,18 @@ Current monitoring and early warning systems for surface defects in highway tunn
 **B. Create virtual-env.**
 `conda create -n TDSNet python`
 
-**C. Install `pytoch opencv-python numpy torchsummary` according to the official documentation.**
+**C. Install `pytorch opencv-python numpy torchsummary` according to the official documentation.**
 
-# Hyperparameter setting
-`batch-size=3 epochs=150 lr=0.0001 weight-decay=1e-4`
+# Training configuration
+Experiments were conducted on two NVIDIA RTX 3090 GPUs (CUDA 11.3.1, PyTorch 1.10.0, Windows 10).The model was trained using the AdamW optimizer with the following hyperparameters:
+- Initial learning rate: 1e-4
+- Weight decay: 1e-4
+- Learning rate scheduler: Cosine Annealing
+- Warm-up epochs: 2
+- Batch size: 3
+We performed additional tuning to achieve optimal performance. Detailed training parameters are provided in Table 1.
+
+![**Table1** Details of the training configuration parameters](./asserts/table_1.png)
 
 # Download weights
 [百度网盘]()
