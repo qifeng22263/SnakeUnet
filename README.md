@@ -25,7 +25,7 @@ Experiments were conducted on two NVIDIA RTX 3090 GPUs (CUDA 11.3.1, PyTorch 1.1
 
 We performed additional tuning to achieve optimal performance. Detailed training parameters are provided in Table 1.
 
-![**Table1:** Details of the training configuration parameters](./assets/table_2.png)
+![**Table1:** Details of the training configuration parameters](./assets/table_2.png "Table1: Details of the training configuration parameters")
 
 # Download weights
 [百度网盘]()
