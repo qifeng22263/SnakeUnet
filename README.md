@@ -22,6 +22,7 @@ Experiments were conducted on two NVIDIA RTX 3090 GPUs (CUDA 11.3.1, PyTorch 1.1
 - Learning rate scheduler: Cosine Annealing
 - Warm-up epochs: 2
 - Batch size: 3
+
 We performed additional tuning to achieve optimal performance. Detailed training parameters are provided in Table 1.
 
 ![**Table1:** Details of the training configuration parameters](./assets/table_2.png)
