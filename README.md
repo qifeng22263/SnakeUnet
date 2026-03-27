@@ -29,4 +29,4 @@ We performed additional tuning to achieve optimal performance. Detailed training
 ![**Table1:** Details of the training configuration parameters](./assets/table_2.png "Table1: Details of the training configuration parameters")
 
 # Download weights
-[百度网盘]()
+[百度网盘](https://pan.baidu.com/s/1_ytzx19KUH_IHucElcXU9w?pwd=darq)
