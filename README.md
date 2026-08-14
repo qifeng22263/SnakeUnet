@@ -1,11 +1,10 @@
-# TSDVision: Robot for Surface Defect Detection in Road Tunnels
-Current monitoring and early warning systems for surface defects in highway tunnel linings primarily rely on manual inspections or fixed sensors. The performance of robotic and automated monitoring systems remains limited by challenges in visual perception and autonomous inspection methodologies under complex tunnel environments. This study presents a novel robotic system, TSDVision, designed for monitoring the evolution of surface defects in highway tunnels, enabling automated defect identification, precise localization, quantitative measurement, and growth tracking. 
+# A Two-Stage Active-Vision Framework for Tunnel Lining Defect Identification, Quantification, and Evolution Monitoring
+Tunnel lining defect monitoring is critical to transportation safety, yet existing visual approaches struggle with the domain shifts, low illumination, and multi-scale defects typical of operational tunnels, and rarely close the loop from detection to long-term evolution tracking. This paper presents a coarse-to-fine active-vision framework that unifies anomaly screening, pixel-level segmentation, sub-millimeter quantification, and cross-temporal evolution monitoring for tunnel lining defects. A lightweight on-board multi-defect detector, TunnelScan (a YOLOv8 variant), first screens large-scale imagery to localize candidate defects in a coarse stage; a novel segmentation network, TDSNet, then performs robust pixel-level segmentation in a fine stage. TDSNet adopts a Multi-stage and Multi-branch Encoding Strategy (MMES) with a Dynamic Snake Convolution encoder and a Sobel-guided edge branch to enhance elongated crack extraction and boundary fidelity. A depth-percolation post-processing step recovers thin-crack continuity and enables crack width measurement to ±0.2 mm, while a registration-based scheme supports defect-level evolution tracking and localization within ±20 cm. TDSNet achieves state-of-the-art segmentation results across public benchmarks and a purpose-built TunnelSet dataset (74.6% mIoU, 62.9% Dice on TunnelSet). Deployed on an autonomous rail-mounted acquisition platform in three operational highway tunnels, the framework accomplishes full-coverage, cross-temporal defect monitoring at speeds over 6 km/h with positioning accuracy of ±2 cm, while reducing image data volume by ~89 % compared to full-resolution scanning, providing a practical solution for long-term health monitoring of large-scale civil infrastructure. 
 # Highlights
-- Novel robot achieves full-process automation for highway tunnel defect evolution monitoring.
-- Two-stage active vision strategy enables ±0.2 mm defect measurement in complex tunnels.
-- TDSNet multi-branch model enhances defect detection in challenging tunnel environments.
-- Established Tunnel dataset with diverse tunnel lining images captured by robot.
-- Field tests in three tunnels validate system robustness for large-scale inspections.
+- Coarse-to-fine detection, segmentation, and evolution tracking framework with ~89% data reduction.
+- TDSNet with multi-branch encoding and snake convolution achieves state-of-the-art crack segmentation.
+- Joint segmentation–measurement yields ±0.2 mm crack width, ±20 cm localization.
+- Robotic rail-mounted platform for tunnel inspection at >6 km/h with ±2 cm precision.
 # Get Started
 **A. Clone this repository.**
 `git clone https://github.com/qifeng22263/TDSNet.git`
